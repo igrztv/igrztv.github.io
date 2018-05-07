@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111491021-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'UA-111491021-1');
+	</script>
+	<title>Product Engineer | Igor Zotov</title>
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="shortcut icon" href="/favicon.png" type="image/png">
+	<meta charset="utf-8" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet" />
+	<script>
+		var projects = '';
+		window.onload = function () {
+			
+		}
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', 'projects.json?'+Math.random(), true);
+		xhr.send();
+		xhr.onreadystatechange = function() {
+			if (xhr.readyState != 4) return;
+			if (xhr.status != 200) {
+				alert(xhr.status + ': ' + xhr.statusText);
+			} else {
+				projects = JSON.parse(xhr.responseText);
+				var line;
+				var index = 0;
+				for (var proj in projects) {
+					var content = projects[proj];
+					if (index++ % 3 == 0) {
+						line = document.createElement('div');
+						line.className = 'items';
+						document.getElementById('projects').appendChild(line);
+						breakLine = document.createElement('div');
+						breakLine.className = 'clear';
+						document.getElementById('projects').appendChild(breakLine);
+					}
+					var item = document.createElement('div');
+					item.className = 'item';
+					item.setAttribute('id', content['id']);
+					line.appendChild(item);
+					
+					itemTitle = document.createElement('div');
+					itemTitle.className = 'item-title';
+					itemTitle.innerHTML = content['item-title']
+					
+					itemTitleImg = document.createElement('img')
+					itemTitleImg.className = 'item-title-img';
+					itemTitleImg.setAttribute('alt', 'sorry, no image')
+					itemTitleImg.setAttribute('src', content['item-title-img']);
+					
+					itemDescription = document.createElement('div');
+					itemDescription.className = 'item-description';
+					itemDescription.innerHTML = content['item-description']
+					
+					if (content['link']) {
+						var link = document.createElement('a');
+						link.setAttribute('href', content['link']);
+						link.appendChild(itemTitle);
+						link.appendChild(itemTitleImg);
+						item.appendChild(link);
+					} else {
+						item.appendChild(itemTitle);
+						item.appendChild(itemTitleImg);
+					}
+					
+					item.appendChild(itemDescription);
+					
+					if (content['goals']) {
+						var ul = document.createElement('ul');
+						for (var g in content['goals']) {
+							var li = document.createElement('li');
+							li.innerHTML = content['goals'][g];
+							ul.appendChild(li);
+						}
+						itemDescription.appendChild(ul);
+					}
+				}
+				while (index++ % 3 != 0) {
+					var item = document.createElement('div');
+					item.className = 'item';
+					line.appendChild(item);
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="h1">
+	Igor Zotov — <b>Product Engineer</b> → Hire me!
+	</div>
+	<div class="item-description" style="padding: 0 2%">
+	Lead from an idea to a new product to be sold
+	<br><br>
+	zotov.bmstu@gmail.com&nbsp;&nbsp;&nbsp;&nbsp;<br>
+	<a href="https://www.linkedin.com/in/igor-zotov-156147128/">LinkedIn</a>&nbsp;&nbsp;&nbsp;&nbsp;<br>
+	<a href="https://www.facebook.com/igor.zotov.1">facebook</a>	
+	</div>
+	<div class="items">
+		<div class="item">
+			<div class="item-title">Strong <b>skills</b></div>
+			<div class="item-description">
+				<ul>
+					<li>electronics</li>
+					<li>programming</li>
+					<li>mechanics</li>
+				<ul>
+			</div>
+			to produce amazing hardware devices with the Internet connection
+		</div>
+		<div class="item">
+			<div class="item-title">Excellent experience</div>
+			<div class="item-description">
+				<ul>
+					<li>3D modeling</li>
+					<li>Manufacturing and prototyping</li>
+					<li>Javascript, web development</li>
+					<li>Python, data analyzing</li>
+					<li>C/C++, robot programming</li>
+					<li>Technical writing</li>
+				<ul>
+			</div>
+		</div>
+		<div class="item">
+			<div class="item-title">Attending to</div>
+			<div class="item-description">
+				<ul>
+					<li>Quality, GD&amp;T and COGS</li>
+					<li>Customer development</li>					
+					<li>Market researching</li>
+					<li>Product testing</li>
+				<ul>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<hr />
+	<div class="h2">
+	Projects I've done
+	</div>
+	<div id="projects"></div>
+	<hr />
+	<div class="h2" id="jobs">
+	Jobs
+	</div>
+	<div class="items">
+		<div class="item" id="amperka">
+			<div class="item-img"><img src="img/amperka.png" alt="img"/></div>
+			<div class="company-title">Amperka</div>
+			<div class="company-site"><a href="http://amperka.ru">amperka.ru</a></div>
+			<div class="clear"></div>
+			<div class="item-title">Product Engineer</div>
+			<div class="item-dates">feb 2016 — present</div>
+			<div class="item-description">
+				<ul class="large-text">
+					<li><b>Developing</b> educational kits for studying electronics and programming: «<a href="#robonyasha">Arduino Robot</a>», 2 parts of «<a href="#iot">Internet of Things</a>»
+					<i>«Arduino Robot» kit has become the most profitable SKU in the company.</i>
+					</li>
+					<li><b>Teamwork managing</b> of software developers, technical writers, and graphic designers</li>
+					<li><b>Researching market</b> and products</li>
+					<li>Customer development</li>					
+					<li><b>Presenting products</b> and company on meetups</li>
+				<ul>
+			</div>
+		</div>
+		<div class="item">
+			<div class="item-img"><img src="img/hello.png" alt="img"/></div>
+			<div class="company-title">Hello Computer</div>
+			<div class="company-site"><a href="http://hello.io">hello.io</a></div>
+			<div class="clear"></div>
+			<div class="item-title">Engineer</div>
+			<div class="item-dates">feb 2014 — dec 2014</div>
+			<div class="item-description">
+				<ul class="large-text">
+					<li><b>Developing electronic and mechanical equipment</b> for interactive installations</li>
+					<li><b>Programing</b> them in <b>C</b> and <b>Javascript</b></li>
+					<br><i>That was a great work with a team of graphic designers. Projects I've done:
+					<li><a href="#speakerball">Speaker Steel Ball</a></li>
+					<li><a href="#orchestra">Bicycle Orchestra</a></li>
+					<li><a href="#heart">Heart For Couples</a></li>
+					<li><a href="#spray">Digital Spray Painter</a></li>
+					<li><a href="#transformation">Transformation Installation</a></li>
+					</i>
+				<ul>
+			</div>
+		</div>
+		<div class="item">
+			<div class="item-img"><img src="img/bitrobotics.png" alt="img"/></div>
+			<div class="company-title">BitRobotics</div>
+			<div class="company-site"><a href="http://bitrobotics.com">bitrobotics.com</a></div>
+			<div class="clear"></div>
+			<div class="item-title">Engineer</div>
+			<div class="item-dates">feb 2013 — dec 2013</div>
+			<div class="item-description">
+				<ul class="large-text">
+					<li><b>Designing mechanical parts</b> for conveyors and elevators with high quality standards and <b>GD&amp;T</b></li>
+					<li><b>Customer supporting</b></li>
+					<br><i>I was a part of these projects:
+					<li><a href="#beluga">Conveyor for «Beluga» vodka</a> — auto sticking a label and setting up the fish-sign on 5000 bottles per hour</li>
+					<li>The 1<sup>st</sup> russian industrial <a href="#delta">Delta-robot</a> — openCV computer vision for navigation</li>
+					</i>
+				<ul>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<hr />
+	<div class="h2">
+	Education
+	</div>
+	<div class="items">
+		<div class="item">
+			<div class="item-img"><img src="img/bmstu.png" alt="BMSTU"/></div>
+			<div class="company-title">Bauman Moscow Technical University</div>
+			<div class="company-site"><a href="http://bmstu.ru">bmstu.ru</a></div>
+			<div class="clear"></div>
+			<div class="item-title">MS, Radioelectronics</div>
+			<div class="item-dates">sep 2010 — jun 2016</div>
+			<div class="item-description">
+				<ul>
+					<li>GPA 3.5</li>
+					<li>Manufacturing technologies for electronic devices</li>
+					<li>Schematics and PCB developing, soldering</li>
+					<li>Founding, milling, lathe machining for metal and plastic </li>
+				<ul>
+			</div>
+		</div>
+		<div class="item">
+			<div class="item-img"><img src="img/technopark.png" alt="Mail.ru"/></div>
+			<div class="company-title">Mail.ru Group</div>
+			<div class="company-site"><a href="http://park.mail.ru">park.mail.ru</a></div>
+			<div class="clear"></div>
+			<div class="item-title">Diploma, Web Architect</div>
+			<div class="item-dates">jan 2015 — feb 2017</div>
+			<div class="item-description">
+				<ul>
+					<li>Studying full-stack technologies</li>
+					<li>Development in collaboration with classmates</li>
+					<li>Git, Linux, Highload, Stress Testing</li>
+					<li>HTML, Javascript, CSS, Grunt, Jquery</li>
+					<li>C/C++, Java, Python, Node JS, MySQL, MongoDB</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

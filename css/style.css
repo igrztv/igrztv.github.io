@@ -1,0 +1,134 @@
+body {
+	margin: 40px auto;
+	width: 80%;
+	font-family: Open Sans;
+	font-size: 15px;
+}
+
+a {
+	text-decoration: underline;
+	color: #000;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #00A;
+}
+
+ul {
+	padding: 0px;
+	margin-left: 0px;
+}
+
+li {
+	#list-style-type: none;
+	#list-style-position: outside;
+}
+
+.large-text li {
+	margin: 2% 0;
+}
+
+hr {
+	background-color: #CCC;
+	border-top: 1px solid #DDD;
+}
+
+.h1, .h2 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	color: #000;
+	margin: 10px 2%;
+}
+
+.h1 {
+	#font-size: 44px;
+	font-size: 300%;
+	line-height: 60px;
+}
+
+.description {
+	margin: 10px 2%;
+	width: 70%;
+}
+
+.h2 {
+	#font-size: 35px;
+	font-size: 230%;
+	line-height: 45px;
+}
+
+.items {
+	margin: 10px 0px;	
+}
+
+.item {
+	padding: 1% 2%;
+}
+
+.item:first-child:nth-last-child(1) {
+	width: 96%;
+}
+
+.item:first-child:nth-last-child(2),
+.item:first-child:nth-last-child(2) ~ .item  {
+	position: relative;
+	float: left;
+	width: 46%;
+	min-width: 200px;
+}
+
+.item:first-child:nth-last-child(3),
+.item:first-child:nth-last-child(3) ~ .item {
+	position: relative;
+	float: left;
+	width: 29%;
+	min-width: 200px;
+}
+
+.item-title-img {
+	width: 80%;
+	max-width: 400px;
+}
+
+.item > a {
+	text-decoration: none;
+	color: #000;
+}
+
+.company-title {
+	font-size: 20px;
+}
+
+.item-img {
+	position: relative;
+	float: left;
+}
+
+.item-img img {
+	margin-top: 5px;
+	margin-right: 5px;
+	#width: 40px;
+	height: 40px;
+}
+
+.item-title {
+	font-size: 30px;
+}
+
+.item-dates {
+	font-style: italic;
+}
+
+.company-site {
+
+}
+
+.item-description {
+	font-size: 15px;
+	line-height: 22px;
+}
+
+.clear {
+	clear: left;
+}
