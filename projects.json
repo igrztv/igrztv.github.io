@@ -1,17 +1,16 @@
 [
 	{
 		"id": "malina",
-		"link": "http://wiki.amperka.ru/robot",
-		"item-title": "«Malina»<br>Kit",
+		"item-title": "\"Malina\"<br>Kit",
 		"item-title-img": "img/malina.jpg",
-		"item-description": "«Malina» (Raspberry) is an educational platform for Python programming. How to control GPIO, set up your own media server or develop a web site using Raspberry Pi computer. Colorful book and funny projects in a single box.",
+		"item-description": "\"Malina\" (Raspberry) is an educational platform for Python programming. How to control GPIO, set up your own media server or develop a web site using Raspberry Pi computer. Colorful book and funny projects in a single box.",
 		"goals": [
 			"<a href=\"https://www.youtube.com/watch?v=CNW2KdwlanE\">Youtube video</a>"
 		]
 	}, {
 		"id": "robonyasha",
 		"link": "http://wiki.amperka.ru/robot",
-		"item-title": "«Arduino Robot»<br>Kit",
+		"item-title": "\"Arduino Robot\"<br>Kit",
 		"item-title-img": "img/robonyasha.jpg",
 		"item-description": "The kit includes Arduino boards, sensors, motors, and an <a href=\"http://wiki.amperka.ru/_media/robot:robonyasha-amperka-18-web.pdf\">educational book</a> to study electronics and programming.",
 		"goals": [
@@ -19,7 +18,7 @@
 		]
 	}, {
 		"id": "iot",
-		"item-title": "«Internet of Things» Kit",
+		"item-title": "\"Internet of Things\" Kit",
 		"item-title-img": "img/iot.jpg",
 		"item-description": "Educational kit based on <b>ESP8266</b>. Made in 2 variants: for Arduino and for Espruino (Javascript).",
 		"goals": [
@@ -43,7 +42,7 @@
 		]
 	}, {
 		"id": "beluga",
-		"item-title": "Vodka «Beluga»<br>Conveyor",
+		"item-title": "Vodka \"Beluga\"<br>Conveyor",
 		"item-title-img": "img/beluga.jpg",
 		"item-description": "I designed mechanical components for the conveyor. It sets up the fish-sign on the bottles.",
 		"goals": [
