@@ -1,5 +1,13 @@
 [
 	{
+		"id": "yodo-plant",
+		"item-title": "\"Auto Watering\"<br>Kit",
+		"item-title-img": "img/plant-y.jpg",
+		"item-description": "\"Watering\" kit helps with learning Javascript for microcontrollers in real case: automatic watering plants. Very popular in Summer.",
+		"goals": [
+			"<a href=\"https://www.youtube.com/watch?v=TCt3E7iWZ7w\">Youtube video</a>"
+		]
+	}, {
 		"id": "malina",
 		"item-title": "\"Malina\"<br>Kit",
 		"item-title-img": "img/malina.jpg",
