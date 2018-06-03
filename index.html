@@ -17,9 +17,79 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet" />
 	<script>
 		var projects = '';
-		window.onload = function () {
-			
+
+		function newEl(tag, className, append) {
+			item = document.createElement(tag);
+			item.className = className;
+			if (typeof append === 'object') {
+				item.appendChild(append);
+			}
+			if (typeof append === 'string') {
+				item.innerHTML = append;
+			}
+			return item;
 		}
+		
+		var xhrJobs = new XMLHttpRequest();
+		xhrJobs.open('GET', 'jobs.json?'+Math.random(), true);
+		xhrJobs.send();
+		xhrJobs.onreadystatechange = function() {
+			if (xhrJobs.readyState != 4) return;
+			if (xhrJobs.status != 200) {
+				alert(xhrJobs.status + ': ' + xhrJobs.statusText);
+			} else {
+				jobs = JSON.parse(xhrJobs.responseText);
+				var line;
+				var index = 0;
+				for (var proj in jobs) {
+					var content = jobs[proj];
+					if (index++ % 3 == 0) {
+						line = newEl('div', 'items');
+						document.getElementById('jobs').appendChild(line);
+						document.getElementById('jobs').appendChild(newEl('div', 'clear'));
+					}
+					item = newEl('div', 'item');
+					item.setAttribute('id', content['id']);
+					line.appendChild(item);
+					
+					itemImg = document.createElement('img')
+					itemImg.setAttribute('alt', 'sorry, no image')
+					itemImg.setAttribute('src', content['item-img']);
+					
+					ul = newEl('ul', 'large-text');
+					for (var g in content['item-description']) {
+						li = newEl('li', '', content['item-description'][g]);
+						ul.appendChild(li);
+					}
+					itemDescription = newEl('div', 'item-description', ul);
+					if (content['goals']) {
+						ul = newEl('ul', 'large-text', content['goal']);
+						for (var g in content['goals']) {
+							li = newEl('li', '', content['goals'][g]);
+							ul.appendChild(li);
+						}
+						itemDescription.appendChild(ul);
+					}
+
+					link = newEl('a', '', content['company-site']);
+					link.setAttribute('href', 'http://'+content['company-site']);
+
+					item.appendChild(newEl('div', 'item-img', itemImg));
+					item.appendChild(newEl('div', 'company-title', content['company-title']));
+					item.appendChild(newEl('div', 'company-site', link));
+					item.appendChild(newEl('div', 'clear'));
+					item.appendChild(newEl('div', 'item-title', content['item-title']));
+					item.appendChild(newEl('div', 'item-dates', content['item-dates']));
+					item.appendChild(itemDescription);
+
+				}
+				while (index++ % 3 != 0) {
+					var item = document.createElement('div');
+					item.className = 'item';
+					line.appendChild(item);
+				}
+			}
+		}		
 		var xhr = new XMLHttpRequest();
 		xhr.open('GET', 'projects.json?'+Math.random(), true);
 		xhr.send();
@@ -96,7 +166,8 @@
 	Igor Zotov — <b>Product Engineer</b> → Hire me!
 	</div>
 	<div class="item-description" style="padding: 0 2%">
-	Lead from an idea to a new product to be sold
+	Use device to bring unforgettable experience to customers<br>
+	I'm perfect in choice between "Qualitatively" or "Rapidly"
 	<br><br>
 	zotov.bmstu@gmail.com&nbsp;&nbsp;&nbsp;&nbsp;<br>
 	<a href="https://www.linkedin.com/in/igor-zotov-156147128/">LinkedIn</a>&nbsp;&nbsp;&nbsp;&nbsp;<br>
@@ -146,70 +217,10 @@
 	</div>
 	<div id="projects"></div>
 	<hr />
-	<div class="h2" id="jobs">
+	<div class="h2">
 	Jobs
 	</div>
-	<div class="items">
-		<div class="item" id="amperka">
-			<div class="item-img"><img src="img/amperka.png" alt="img"/></div>
-			<div class="company-title">Amperka</div>
-			<div class="company-site"><a href="http://amperka.ru">amperka.ru</a></div>
-			<div class="clear"></div>
-			<div class="item-title">Product Engineer</div>
-			<div class="item-dates">feb 2016 — present</div>
-			<div class="item-description">
-				<ul class="large-text">
-					<li><b>Developing</b> educational kits for studying electronics and programming: "<a href="#robonyasha">Arduino Robot</a>", 2 parts of "<a href="#iot">Internet of Things</a>",
-					<i>"Arduino Robot", and "<a href="#malina">Malina</a>" kits have become the most profitable SKU in the company.</i>
-					</li>
-					<li><b>Teamwork managing</b> of software developers, technical writers, and graphic designers</li>
-					<li><b>Researching market</b> and products</li>
-					<li>Customer development</li>					
-					<li><b>Presenting products</b> and company on meetups</li>
-				<ul>
-			</div>
-		</div>
-		<div class="item">
-			<div class="item-img"><img src="img/hello.png" alt="img"/></div>
-			<div class="company-title">Hello Computer</div>
-			<div class="company-site"><a href="http://hello.io">hello.io</a></div>
-			<div class="clear"></div>
-			<div class="item-title">Engineer</div>
-			<div class="item-dates">feb 2014 — dec 2014</div>
-			<div class="item-description">
-				<ul class="large-text">
-					<li><b>Developing electronic and mechanical equipment</b> for interactive installations</li>
-					<li><b>Programing</b> them in <b>C</b> and <b>Javascript</b></li>
-					<br><i>That was a great work with a team of graphic designers. Projects I've done:
-					<li><a href="#speakerball">Speaker Steel Ball</a></li>
-					<li><a href="#orchestra">Bicycle Orchestra</a></li>
-					<li><a href="#heart">Heart For Couples</a></li>
-					<li><a href="#spray">Digital Spray Painter</a></li>
-					<li><a href="#transformation">Transformation Installation</a></li>
-					</i>
-				<ul>
-			</div>
-		</div>
-		<div class="item">
-			<div class="item-img"><img src="img/bitrobotics.png" alt="img"/></div>
-			<div class="company-title">BitRobotics</div>
-			<div class="company-site"><a href="http://bitrobotics.com">bitrobotics.com</a></div>
-			<div class="clear"></div>
-			<div class="item-title">Engineer</div>
-			<div class="item-dates">feb 2013 — dec 2013</div>
-			<div class="item-description">
-				<ul class="large-text">
-					<li><b>Designing mechanical parts</b> for conveyors and elevators with high quality standards and <b>GD&amp;T</b></li>
-					<li><b>Customer supporting</b></li>
-					<br><i>I was a part of these projects:
-					<li><a href="#beluga">Conveyor for "Beluga" vodka</a> — auto sticking a label and setting up the fish-sign on 5000 bottles per hour</li>
-					<li>The 1<sup>st</sup> russian industrial <a href="#delta">Delta-robot</a> — openCV computer vision for navigation</li>
-					</i>
-				<ul>
-			</div>
-		</div>
-	</div>
-	<div class="clear"></div>
+	<div id="jobs"></div>
 	<hr />
 	<div class="h2">
 	Education
