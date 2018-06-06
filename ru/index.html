@@ -7,11 +7,10 @@
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
-
 	  gtag('config', 'UA-111491021-2');
 	</script>
 	<title>Product Engineer | Igor Zotov</title>
-	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="/css/style.css" />
 	<link rel="shortcut icon" href="/favicon.png" type="image/png">
 	<meta charset="utf-8" />
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet" />
@@ -34,7 +33,7 @@
 		}
 		
 		var xhrJobs = new XMLHttpRequest();
-		xhrJobs.open('GET', 'ru/jobs.json?'+Math.random(), true);
+		xhrJobs.open('GET', 'jobs.json?'+Math.random(), true);
 		xhrJobs.send();
 		xhrJobs.onreadystatechange = function() {
 			if (xhrJobs.readyState != 4) return;
@@ -82,7 +81,7 @@
 			}
 		}		
 		var xhr = new XMLHttpRequest();
-		xhr.open('GET', 'ru/projects.json?'+Math.random(), true);
+		xhr.open('GET', 'projects.json?'+Math.random(), true);
 		xhr.send();
 		xhr.onreadystatechange = function() {
 			if (xhr.readyState != 4) return;
@@ -199,28 +198,28 @@
 	</div>
 	<div class="items">
 		<div class="item">
-			<div class="item-img"><img src="img/bmstu.png" alt="BMSTU"/></div>
-			<div class="company-title">Bauman Moscow Technical University</div>
+			<div class="item-img"><img src="/img/bmstu.png" alt="BMSTU"/></div>
+			<div class="company-title">МГТУ им. Баумана</div>
 			<div class="company-site"><a href="http://bmstu.ru">bmstu.ru</a></div>
 			<div class="clear"></div>
-			<div class="item-title">MS, Radioelectronics</div>
-			<div class="item-dates">sep 2010 — jun 2016</div>
+			<div class="item-title">Технологии радиоэлектронных средств</div>
+			<div class="item-dates">выпуск 2016</div>
 			<div class="item-description">
 				<ul>
-					<li>GPA 3.5</li>
-					<li>Manufacturing technologies for electronic devices</li>
-					<li>Schematics and PCB developing, soldering</li>
-					<li>Founding, milling, lathe machining for metal and plastic </li>
+					<li>Средний балл 4.5</li>
+					<li>Технологии производства электронных устройств</li>
+					<li>Схемотехника и проектирование PCB</li>
+					<li>Металлообработка, обработка пластмасс, производство корпусов</li>
 				<ul>
 			</div>
 		</div>
 		<div class="item">
-			<div class="item-img"><img src="img/technopark.png" alt="Mail.ru"/></div>
-			<div class="company-title">Mail.ru Group</div>
+			<div class="item-img"><img src="/img/technopark.png" alt="Mail.ru"/></div>
+			<div class="company-title">Технопарк Mail.ru Group</div>
 			<div class="company-site"><a href="http://park.mail.ru">park.mail.ru</a></div>
 			<div class="clear"></div>
-			<div class="item-title">Diploma, Web Architect</div>
-			<div class="item-dates">jan 2015 — feb 2017</div>
+			<div class="item-title">Диплом Web-архитектора</div>
+			<div class="item-dates">выпуск 2017</div>
 			<div class="item-description">
 				<ul>
 					<li>Studying full-stack technologies</li>
