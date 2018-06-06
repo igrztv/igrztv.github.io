@@ -34,7 +34,7 @@
 		}
 		
 		var xhrJobs = new XMLHttpRequest();
-		xhrJobs.open('GET', 'jobs.json?'+Math.random(), true);
+		xhrJobs.open('GET', 'ru/jobs.json?'+Math.random(), true);
 		xhrJobs.send();
 		xhrJobs.onreadystatechange = function() {
 			if (xhrJobs.readyState != 4) return;
@@ -82,7 +82,7 @@
 			}
 		}		
 		var xhr = new XMLHttpRequest();
-		xhr.open('GET', 'projects.json?'+Math.random(), true);
+		xhr.open('GET', 'ru/projects.json?'+Math.random(), true);
 		xhr.send();
 		xhr.onreadystatechange = function() {
 			if (xhr.readyState != 4) return;

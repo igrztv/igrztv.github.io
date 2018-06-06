@@ -1,0 +1,52 @@
+[
+	{
+		"id": "amperka",
+		"item-img": "img/amperka.png",
+		"company-title": "Amperka",
+		"company-site": "amperka.ru",
+		"item-title": "Product Engineer",
+		"item-dates": "feb 2016 — present",
+		"item-description": [
+			"<b>Developing</b> educational kits for studying electronics and programming: \"<a href=\"#robonyasha\">Arduino Robot</a>\", 2 parts of \"<a href=\"#iot\">Internet of Things</a>\",<i>\"Arduino Robot\", and \"<a href=\"#malina\">Malina</a>\" kits have become the most profitable SKU in the company.</i>",
+			"<b>Teamwork managing</b> of software developers, technical writers, and graphic designers",
+			"<b>Researching market</b> and products",
+			"Customer development",
+			"<b>Presenting products</b> and company on meetups"
+		]
+	}, {
+		"id": "hello",
+		"item-img": "img/hello.png",
+		"company-title": "Hello Computer",
+		"company-site": "hello.io",
+		"item-title": "Engineer",
+		"item-dates": "feb 2014 — dec 2014",
+		"item-description": [
+			"<b>Developing electronic and mechanical equipment</b> for interactive installations",
+			"<b>Programing</b> them in <b>C</b> and <b>Javascript</b>"
+		],
+		"goal": "<i>That was a great work with a team of graphic designers. Projects I've done:</i>",
+		"goals": [
+			"<i><a href=\"#speakerball\">Speaker Steel Ball</a></i>",
+			"<i><a href=\"#orchestra\">Bicycle Orchestra</a></i>",
+			"<i><a href=\"#heart\">Heart For Couples</a></i>",
+			"<i><a href=\"#spray\">Digital Spray Painter</a></i>",
+			"<i><a href=\"#transformation\">Transformation Installation</a></i>"
+		]
+	}, {
+		"id": "bitrobotics",
+		"item-img": "img/bitrobotics.png",
+		"company-title": "BitRobotics",
+		"company-site": "bitrobotics.com",
+		"item-title": "Engineer",
+		"item-dates": "feb 2013 — dec 2013",
+		"item-description": [
+			"<b>Designing mechanical parts</b> for conveyors and elevators with high quality standards and <b>GD&amp;T</b>",
+			"<b>Customer supporting</b>"
+		],
+		"goal": "<i>I was a part of these projects:</i>",
+		"goals": [
+			"<i><a href=\"#beluga\">Conveyor for \"Beluga\" vodka</a> — auto sticking a label and setting up the fish-sign on 5000 bottles per hour</i>",
+			"<i>The 1<sup>st</sup> russian industrial <a href=\"#delta\">Delta-robot</a> — openCV computer vision for navigation</i>"
+		]
+	}
+]
