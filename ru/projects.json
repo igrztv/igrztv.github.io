@@ -1,11 +1,71 @@
 [
 	{
+		"id": "bear",
+		"item-title": "Рюкзачок сказок",
+		"item-title-img": "img/bear.jpg",
+		"item-description": "Электронный рюкзачок рассказывает сказки детям. Управляется с телефона родителей. Встроены фразы «давай ложиться спать», «не суй пальцы в розетку» и т.д. Встроена индикация для ночника и будильника. Сказки доступны по подписке в «Сказки-store».",
+		"goals": [
+			"<b>Руководил командой</b> из 3 человек",
+			"Разработал и собрал устройство",
+			"Успешно <b>презентовали проект</b> в <a href=\"#technopark\">Технопарке Mail.ru Group</a>",
+			"<a href=\"https://www.youtube.com/watch?v=zwL6EY1PPXk\">видео в youtube</a>"
+		]
+	}, {
+		"id": "cat",
+		"item-title": "Фитнес-трекер<br>для котов",
+		"item-title-img": "img/cat.jpg",
+		"item-description": "Электронный ошейник для мониторинга здоровья домашних животных. Собирает данные с датчиков IMU и температуры, отправляет на сервер. Random Forest и скрытые марковские цепи выявляют аномалии в поведении, предупреждая владельцев в соц.сетях.",
+		"goals": [
+			"<b>Руководил командой</b> из 4 человек",
+			"Разработал и собрал ошейник",
+			"Наша команда <b>выиграла конкурс</b> в 2015 году"
+		]
+	}, {
+		"id": "robonyasha",
+		"link": "http://wiki.amperka.ru/robot",
+		"item-title": "Набор «Робоняша»",
+		"item-title-img": "img/robonyasha.jpg",
+		"item-description": "Набор для обучения электронике и программированию на JavaScript. Красочная <a href=\"http://wiki.amperka.ru/_media/robot:robonyasha-amperka-18-web.pdf\">книга</a> расскажет как собрать и запрограммировать робота. Научит азам электроники.",
+		"goals": [
+			"Составил образовательный контент",
+			"<b>Подготовил</b> продукт <b>к производству</b>",
+			"<a href=\"https://www.youtube.com/watch?v=wS3Okcguwds\">видео в youtube</a>"			
+		]
+	}, {
+		"id": "minion",
+		"item-title": "Selfie-робот<br>Миньон",
+		"item-title-img": "img/minion.jpg",
+		"item-description": "Миньон делает селфи и постит в свой аккаунт в Инстаграме. Управляется через Wi-Fi с ноутбука или приложения.",
+		"goals": [
+			"Корпус напечатан на 3D-принтере",
+			"ПО робота написано на C++",
+			"Статья на <a href=\"https://habr.com/post/384171/\">хабре</a>"
+		]
+	}, {
+		"id": "diploma",
+		"item-title": "Дипломный<br>проект",
+		"item-title-img": "img/diploma.jpg",
+		"item-description": "Образовательный стенд для обучения программированию микроконтроллеров STM32. Сеть стендов управляется по Wi-Fi с одного компьютера преподавателя: подключение/отключение модулей, контроль выполнения лабораторных работ.",
+		"goals": [
+			"Изготовил устройство к защите диплома",
+			"Разработку внедрили на кафедре"
+		]
+	}, {
+		"id": "clock",
+		"item-title": "Часы<br>из слов",
+		"item-title-img": "img/clock.jpg",
+		"item-description": "RGB-лента WS28xx подсвечивает буквы на немецком языке. Время устанавливается автоматически из сети.",
+		"goals": [
+			"Продал за хорошую сумму",
+			"Статья на <a href=\"https://habr.com/post/384493/\">хабре</a>"
+		]
+	}, {
 		"id": "yodo-plant",
-		"item-title": "\"Auto Watering\"<br>Kit",
+		"item-title": "Набор «Автополив»",
 		"item-title-img": "img/plant-y.jpg",
 		"item-description": "\"Watering\" kit helps with learning Javascript for microcontrollers in real case: automatic watering plants. Very popular in Summer.",
 		"goals": [
-			"<a href=\"https://www.youtube.com/watch?v=TCt3E7iWZ7w\">Youtube video</a>"
+			"<a href=\"https://www.youtube.com/watch?v=TCt3E7iWZ7w\">видео в youtube</a>"
 		]
 	}, {
 		"id": "malina",
@@ -13,16 +73,7 @@
 		"item-title-img": "img/malina.jpg",
 		"item-description": "\"Malina\" (Raspberry) is an educational platform for Python programming. How to control GPIO, set up your own media server or develop a web site using Raspberry Pi computer. Colorful book and funny projects in a single box.",
 		"goals": [
-			"<a href=\"https://www.youtube.com/watch?v=CNW2KdwlanE\">Youtube video</a>"
-		]
-	}, {
-		"id": "robonyasha",
-		"link": "http://wiki.amperka.ru/robot",
-		"item-title": "\"Arduino Robot\"<br>Kit",
-		"item-title-img": "img/robonyasha.jpg",
-		"item-description": "The kit includes Arduino boards, sensors, motors, and an <a href=\"http://wiki.amperka.ru/_media/robot:robonyasha-amperka-18-web.pdf\">educational book</a> to study electronics and programming.",
-		"goals": [
-			"<a href=\"https://www.youtube.com/watch?v=wS3Okcguwds\">Youtube video</a>"
+			"<a href=\"https://www.youtube.com/watch?v=CNW2KdwlanE\">видео в youtube</a>"
 		]
 	}, {
 		"id": "iot",
@@ -30,7 +81,7 @@
 		"item-title-img": "img/iot.jpg",
 		"item-description": "Educational kit based on <b>ESP8266</b>. Made in 2 variants: for Arduino and for Espruino (Javascript).",
 		"goals": [
-			"<a href=\"https://www.youtube.com/watch?v=uBkJ70qMLQk\">Youtube video</a>"
+			"<a href=\"https://www.youtube.com/watch?v=uBkJ70qMLQk\">видео в youtube</a>"
 		]
 	}, {
 		"id": "travis",
@@ -38,7 +89,7 @@
 		"item-title-img": "img/travis.jpg",
 		"item-description": "Monitoring contunious development. <b>Javascript</b> code runs on <b>STM32</b> and requests JSON from Travis CI via HTTPS.",
 		"goals": [
-			"<a href=\"https://www.youtube.com/watch?v=SO-rHkXpbQQ\">Youtube video</a>"
+			"<a href=\"https://www.youtube.com/watch?v=SO-rHkXpbQQ\">видео в youtube</a>"
 		]
 	}, {
 		"id": "delta",
@@ -46,7 +97,7 @@
 		"item-title-img": "img/delta.jpg",
 		"item-description": "First Russian industrial delta-robot by <a href=\"#jobs\">BitRobotics</a>. My task was to develop object recognition with <b>openCV</b>",
 		"goals": [
-			"<a href=\"https://www.youtube.com/watch?v=SO-rHkXpbQQ\">Youtube video</a>"
+			"<a href=\"https://www.youtube.com/watch?v=SO-rHkXpbQQ\">видео в youtube</a>"
 		]
 	}, {
 		"id": "beluga",
@@ -56,36 +107,6 @@
 		"goals": [
 			"3D models for milling and lathe machining was designed with GD&amp;T"
 		]
-	}, {
-		"id": "cat",
-		"item-title": "Fitness Tracker<br>For Cats",
-		"item-title-img": "img/cat.jpg",
-		"item-description": "Electronic bracelet collects data from sensors and sends to python server. Machine learning algorithms define cats behavior.",
-		"goals": [
-			"Our team won a competition"
-		]
-	}, {
-		"id": "bear",
-		"item-title": "Story Telling<br>Device",
-		"item-title-img": "img/bear.jpg",
-		"item-description": "The electronic device tells stories to kids. It is controlled via an application for Android or iOS.",
-		"goals": [
-			"<a href=\"https://www.youtube.com/watch?v=zwL6EY1PPXk\">Youtube video</a>"
-		]
-	}, {
-		"id": "minion",
-		"item-title": "Selfie-robot<br>Minion",
-		"item-title-img": "img/minion.jpg",
-		"item-description": "<b>3D printed</b> Minion takes selfie photos and uploads to Instagram. It is controlled via TCP over Wi-Fi.",
-		"goals": [
-			"3D modeling for printing",
-			"C++ for robot and control panel"
-		]
-	}, {
-		"id": "clock",
-		"item-title": "Clock<br>of words",
-		"item-title-img": "img/clock.jpg",
-		"item-description": "The clock consists of Photon chip and WS2812 led strip. Time is set up from <b>mobile application</b>"
 	}, {
 		"id": "speakerball",
 		"item-title": "Speaker<br>Steel Ball",
@@ -114,11 +135,6 @@
 		"item-title": "Heart<br>For Couples",
 		"item-title-img": "img/heart.jpg",
 		"item-description": "Simple mechanics, but emotional effect. Close electric circuit to verify your feelings."
-	}, {
-		"id": "diploma",
-		"item-title": "Graduating<br>Project",
-		"item-title-img": "img/diploma.jpg",
-		"item-description": "Education PCB based on STM32. One MC is for students to teach them programming. Another MC is for the teacher to activate modules and to monitor signals. EPS82 enables remote operations."
 	}, {
 		"id": "mammoth",
 		"item-title": "Robot<br>Mammoth",

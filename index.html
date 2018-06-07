@@ -19,7 +19,7 @@
 		var projects = '';
 
 		function newEl(tag, className, append, attr) {
-			item = document.createElement(tag);
+			var item = document.createElement(tag);
 			item.className = className;
 			if (typeof append === 'object') {
 				item.appendChild(append);

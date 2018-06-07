@@ -9,7 +9,7 @@
 	  gtag('js', new Date());
 	  gtag('config', 'UA-111491021-2');
 	</script>
-	<title>Product Engineer | Igor Zotov</title>
+	<title>Менеджер проектов | Игорь Зотов</title>
 	<link rel="stylesheet" href="/css/style.css" />
 	<link rel="shortcut icon" href="/favicon.png" type="image/png">
 	<meta charset="utf-8" />
@@ -18,7 +18,7 @@
 		var projects = '';
 
 		function newEl(tag, className, append, attr) {
-			item = document.createElement(tag);
+			var item = document.createElement(tag);
 			item.className = className;
 			if (typeof append === 'object') {
 				item.appendChild(append);
@@ -33,14 +33,14 @@
 		}
 		
 		var xhrJobs = new XMLHttpRequest();
-		xhrJobs.open('GET', 'jobs.json?'+Math.random(), true);
+		xhrJobs.open('GET', 'ru/jobs.json?'+Math.random(), true);
 		xhrJobs.send();
 		xhrJobs.onreadystatechange = function() {
 			if (xhrJobs.readyState != 4) return;
 			if (xhrJobs.status != 200) {
 				alert(xhrJobs.status + ': ' + xhrJobs.statusText);
 			} else {
-				jobs = JSON.parse(xhrJobs.responseText);
+				var jobs = JSON.parse(xhrJobs.responseText);
 				var line;
 				var index = 0;
 				for (var proj in jobs) {
@@ -50,30 +50,33 @@
 						document.getElementById('jobs').appendChild(line);
 						document.getElementById('jobs').appendChild(newEl('div', 'clear'));
 					}
-					item = newEl('div', 'item', undefined, {'id': content['id']});
+					var item = newEl('div', 'item', undefined, {'id': content['id']});
 					line.appendChild(item);
-					
-					ul = newEl('ul', 'large-text');
-					for (var g in content['item-description']) {
-						li = newEl('li', '', content['item-description'][g]);
-						ul.appendChild(li);
-					}
-					itemDescription = newEl('div', 'item-description', ul);
-					if (content['goals']) {
-						ul = newEl('ul', 'large-text', content['goal']);
-						for (var g in content['goals']) {
-							li = newEl('li', '', content['goals'][g]);
-							ul.appendChild(li);
-						}
-						itemDescription.appendChild(ul);
-					}
 
-					item.appendChild(newEl('div', 'item-img', newEl('img', '', undefined, {'alt': 'sorry, no image', 'src': content['item-img']})));
+					item.appendChild(newEl('div', 'item-img', newEl('img', '', undefined, {'alt': 'sorry, no image', 'src': '/'+content['item-img']})));
 					item.appendChild(newEl('div', 'company-title', content['company-title']));
 					item.appendChild(newEl('div', 'company-site', newEl('a', '', content['company-site'], {'href': 'http://'+content['company-site']})));
 					item.appendChild(newEl('div', 'clear'));
 					item.appendChild(newEl('div', 'item-title', content['item-title']));
 					item.appendChild(newEl('div', 'item-dates', content['item-dates']));
+					
+					var ul = newEl('ul', 'large-text');
+					for (var g in content['item-description']) {
+						var li = newEl('li', '', content['item-description'][g]);
+						ul.appendChild(li);
+					}
+					
+					var itemDescription = newEl('div', 'item-description', ul);
+					
+					if (content['goals']) {
+						var ul2 = newEl('ul', 'large-text', content['goal']);
+						for (var g in content['goals']) {
+							li = newEl('li', '', content['goals'][g]);
+							ul2.appendChild(li);
+						}
+						itemDescription.appendChild(ul2);
+					}
+
 					item.appendChild(itemDescription);
 
 				}
@@ -81,14 +84,14 @@
 			}
 		}		
 		var xhr = new XMLHttpRequest();
-		xhr.open('GET', 'projects.json?'+Math.random(), true);
+		xhr.open('GET', 'ru/projects.json?'+Math.random(), true);
 		xhr.send();
 		xhr.onreadystatechange = function() {
 			if (xhr.readyState != 4) return;
 			if (xhr.status != 200) {
 				alert(xhr.status + ': ' + xhr.statusText);
 			} else {
-				projects = JSON.parse(xhr.responseText);
+				var projects = JSON.parse(xhr.responseText);
 				var line;
 				var index = 0;
 				var projectsEL = document.getElementById('projects');
@@ -99,17 +102,17 @@
 						projectsEL.appendChild(line);
 						projectsEL.appendChild(newEl('div', 'clear'));
 					}
-					item = newEl('div', 'item', undefined, {'id': content['id']});
+					var item = newEl('div', 'item', undefined, {'id': content['id']});
 					line.appendChild(item);
 					itemDescription = newEl('div', 'item-description', content['item-description']);
 					
 					if (content['link']) {
-						link = newEl('a', '', newEl('div', 'item-title', content['item-title']), {'href': content['link']});
-						link.appendChild(newEl('div', 'item-title-img', newEl('img', 'item-title-img', undefined, {'alt': 'sorry, no image', 'src': content['item-title-img']})));
+						var link = newEl('a', '', newEl('div', 'item-title', content['item-title']), {'href': content['link']});
+						link.appendChild(newEl('div', 'item-title-img', newEl('img', 'item-title-img', undefined, {'alt': 'sorry, no image', 'src': '/'+content['item-title-img']})));
 						item.appendChild(link);
 					} else {
 						item.appendChild(newEl('div', 'item-title', content['item-title']));
-						item.appendChild(newEl('div', 'item-title-img', newEl('img', 'item-title-img', undefined, {'alt': 'sorry, no image', 'src': content['item-title-img']})));
+						item.appendChild(newEl('div', 'item-title-img', newEl('img', 'item-title-img', undefined, {'alt': 'sorry, no image', 'src': '/'+content['item-title-img']})));
 					}
 					
 					item.appendChild(itemDescription);
@@ -117,7 +120,7 @@
 					if (content['goals']) {
 						var ul = document.createElement('ul');
 						for (var g in content['goals']) {
-							li = newEl('li', '', content['goals'][g]);
+							var li = newEl('li', '', content['goals'][g]);
 							ul.appendChild(li);
 						}
 						itemDescription.appendChild(ul);
@@ -134,102 +137,93 @@
 </head>
 <body>
 	<div class="h1">
-	Igor Zotov — <b>Product Engineer</b> → Hire me!
+	Игорь Зотов, <b>Менеджер проектов</b>
 	</div>
 	<div class="item-description" style="padding: 0 2%">
-	Use device to bring unforgettable experience to customers<br>
-	I'm perfect in choice between "Qualitatively" or "Rapidly"
+	Стремлюсь создавать <i>устройства</i>, вызывающие эмоции клиентов<br>
+	Гибко переключаюсь между «<i>качественно</i>» и «<i>быстро</i>»<br>
+	Учитываю <i>стоимость</i> производства и требования рынка
 	<br><br>
-	zotov.bmstu@gmail.com&nbsp;&nbsp;&nbsp;&nbsp;<br>
-	<a href="https://www.linkedin.com/in/igor-zotov-156147128/">LinkedIn</a>&nbsp;&nbsp;&nbsp;&nbsp;<br>
+	zotov.bmstu@gmail.com&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="https://www.linkedin.com/in/igor-zotov-156147128/">linkedIn</a>&nbsp;&nbsp;&nbsp;&nbsp;
 	<a href="https://www.facebook.com/igor.zotov.1">facebook</a>	
 	</div>
 	<div class="items">
 		<div class="item">
-			<div class="item-title">Strong <b>skills</b></div>
+			<div class="item-title">Полезен<br>в разработке</div>
 			<div class="item-description">
 				<ul>
-					<li>electronics</li>
-					<li>programming</li>
-					<li>mechanics</li>
-				<ul>
-			</div>
-			to produce amazing hardware devices with the Internet connection
-		</div>
-		<div class="item">
-			<div class="item-title">Excellent experience</div>
-			<div class="item-description">
-				<ul>
-					<li>3D modeling</li>
-					<li>Manufacturing and prototyping</li>
-					<li>Javascript, web development</li>
-					<li>Python, data analyzing</li>
-					<li>C/C++, robot programming</li>
-					<li>Technical writing</li>
+					<li>интернет-устройств</li>
+					<li>архитектуры сервисов</li>
+					<li>корпусов</li>
 				<ul>
 			</div>
 		</div>
 		<div class="item">
-			<div class="item-title">Attending to</div>
+			<div class="item-title">Большой опыт<br>работы</div>
 			<div class="item-description">
 				<ul>
-					<li>Quality, GD&amp;T and COGS</li>
-					<li>Customer development</li>					
-					<li>Market researching</li>
-					<li>Product testing</li>
+					<li>3D моделирование</li>
+					<li>Производство и прототипирование</li>
+					<li>Составление ТЗ и тех. карт</li>
 				<ul>
+			</div>
+		</div>
+		<div class="item">
+			<div class="item-title">Широкий спектр<br>знаний</div>
+			<div class="item-description">
+				<ul>
+					<li>Проектирование печатных плат</li>
+					<li>C/C++, программирование устройств</li>
+					<li>JavaScript, Python, Web-разработка</li>			
+				</ul>
 			</div>
 		</div>
 	</div>
 	<div class="clear"></div>
 	<hr />
 	<div class="h2">
-	Projects I've done
-	</div>
-	<div id="projects"></div>
-	<hr />
-	<div class="h2">
-	Jobs
+	Опыт работы
 	</div>
 	<div id="jobs"></div>
 	<hr />
 	<div class="h2">
-	Education
+	Образование
 	</div>
 	<div class="items">
-		<div class="item">
+		<div class="item" id="bmstu">
 			<div class="item-img"><img src="/img/bmstu.png" alt="BMSTU"/></div>
 			<div class="company-title">МГТУ им. Баумана</div>
 			<div class="company-site"><a href="http://bmstu.ru">bmstu.ru</a></div>
 			<div class="clear"></div>
-			<div class="item-title">Технологии радиоэлектронных средств</div>
+			<div class="item-title" style="font-size: 25px">Технологии электронных устройств</div>
 			<div class="item-dates">выпуск 2016</div>
 			<div class="item-description">
 				<ul>
+					<li>Изучал <i>технологии приборостроения, металлообработку, обработку пластмасс, производство корпусов, схемотехнику, проектирование PCB</i></li>
 					<li>Средний балл 4.5</li>
-					<li>Технологии производства электронных устройств</li>
-					<li>Схемотехника и проектирование PCB</li>
-					<li>Металлообработка, обработка пластмасс, производство корпусов</li>
 				<ul>
 			</div>
 		</div>
-		<div class="item">
+		<div class="item" id="technopark">
 			<div class="item-img"><img src="/img/technopark.png" alt="Mail.ru"/></div>
 			<div class="company-title">Технопарк Mail.ru Group</div>
 			<div class="company-site"><a href="http://park.mail.ru">park.mail.ru</a></div>
 			<div class="clear"></div>
-			<div class="item-title">Диплом Web-архитектора</div>
+			<div class="item-title" style="font-size: 25px">Диплом Web-архитектора</div>
 			<div class="item-dates">выпуск 2017</div>
 			<div class="item-description">
 				<ul>
-					<li>Studying full-stack technologies</li>
-					<li>Development in collaboration with classmates</li>
-					<li>Git, Linux, Highload, Stress Testing</li>
-					<li>HTML, Javascript, CSS, Grunt, Jquery</li>
-					<li>C/C++, Java, Python, Node JS, MySQL, MongoDB</li>
+					<li>Руководитель проектов: <a href="#cat">«Фитнес-трекер»</a>, «Bluetooth-танки», <a href="#minion">«Selfie-робот»</a>, <a href="#bear">«Рюкзачок сказок»</a></li>
+					<li>Изучал: <i>Git, Linux, Highload, Нагрузочное тестирование, HTML, Javascript, CSS, Grunt, Jquery, C/C++, Java, Python, Node JS, MySQL, MongoDB</i></li>
 				</ul>
 			</div>
 		</div>
 	</div>
+	<hr />
+	<div class="h2">
+	Проекты
+	</div>
+	<div id="projects"></div>
 </body>
 </html>

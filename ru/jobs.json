@@ -2,51 +2,57 @@
 	{
 		"id": "amperka",
 		"item-img": "img/amperka.png",
-		"company-title": "Amperka",
+		"company-title": "Амперка",
 		"company-site": "amperka.ru",
-		"item-title": "Product Engineer",
-		"item-dates": "feb 2016 — present",
+		"item-title": "Менеджер проектов",
+		"item-dates": "с февраля 2016",
 		"item-description": [
-			"<b>Developing</b> educational kits for studying electronics and programming: \"<a href=\"#robonyasha\">Arduino Robot</a>\", 2 parts of \"<a href=\"#iot\">Internet of Things</a>\",<i>\"Arduino Robot\", and \"<a href=\"#malina\">Malina</a>\" kits have become the most profitable SKU in the company.</i>",
-			"<b>Teamwork managing</b> of software developers, technical writers, and graphic designers",
-			"<b>Researching market</b> and products",
-			"Customer development",
-			"<b>Presenting products</b> and company on meetups"
+			"<b>Руковожу разработкой</b> новых наборов",
+			"<b>Исследую рынок</b> и конкурирующие продукты",
+			"Изучаю клиентов и потребности"
+		],
+		"goal": "<b>Разработал и выпустил</b> на рынок образовательные наборы:",
+		"goals": [
+			"<i>«<a href=\"#robonyasha\">Робоняша</a>»</i>",
+			"<i>2 части «<a href=\"#iot\">Интернет вещей</a>»</i>",
+			"<i>«<a href=\"#malina\">Малина</a>»</i>",
+			"<i>«<a href=\"#yodo-plant\">Автополив</a>»</i>"
 		]
 	}, {
 		"id": "hello",
 		"item-img": "img/hello.png",
 		"company-title": "Hello Computer",
 		"company-site": "hello.io",
-		"item-title": "Engineer",
-		"item-dates": "feb 2014 — dec 2014",
+		"item-title": "Инженер",
+		"item-dates": "февраль 2014 — декабрь 2014",
 		"item-description": [
-			"<b>Developing electronic and mechanical equipment</b> for interactive installations",
-			"<b>Programing</b> them in <b>C</b> and <b>Javascript</b>"
+			"<b>Разрабатывал электронику, механику и ПО</b> для интерактивных инсталляций",
+			"Сопровождал проекты в качестве технического специалиста"
 		],
-		"goal": "<i>That was a great work with a team of graphic designers. Projects I've done:</i>",
+		"goal": "<b>Научился работать в авральном режиме</b> в команде дизайнеров. Выполнил проекты:",
 		"goals": [
-			"<i><a href=\"#speakerball\">Speaker Steel Ball</a></i>",
-			"<i><a href=\"#orchestra\">Bicycle Orchestra</a></i>",
-			"<i><a href=\"#heart\">Heart For Couples</a></i>",
-			"<i><a href=\"#spray\">Digital Spray Painter</a></i>",
-			"<i><a href=\"#transformation\">Transformation Installation</a></i>"
+			"<i><a href=\"#speakerball\">Слушающий шар</a></i>",
+			"<i><a href=\"#orchestra\">Велосипедный оркестр</a></i>",
+			"<i><a href=\"#heart\">Сердца двух</a></i>",
+			"<i><a href=\"#spray\">Цифровой художник</a></i>",
+			"<i><a href=\"#transformation\">Трансформация</a></i>"
 		]
 	}, {
 		"id": "bitrobotics",
 		"item-img": "img/bitrobotics.png",
 		"company-title": "BitRobotics",
 		"company-site": "bitrobotics.com",
-		"item-title": "Engineer",
-		"item-dates": "feb 2013 — dec 2013",
+		"item-title": "Инженер",
+		"item-dates": "февраль 2013 — декабрь 2013",
 		"item-description": [
-			"<b>Designing mechanical parts</b> for conveyors and elevators with high quality standards and <b>GD&amp;T</b>",
-			"<b>Customer supporting</b>"
+			"Создавал <b>промышленные конвейеры</b> по высоким стандартам качества",
+			"<b>Строил</b> сложные <b>3D-модели</b>, отправлял на изготовление"
 		],
-		"goal": "<i>I was a part of these projects:</i>",
+		"goal": "<b>Участвовал в проектах:</b>",
 		"goals": [
-			"<i><a href=\"#beluga\">Conveyor for \"Beluga\" vodka</a> — auto sticking a label and setting up the fish-sign on 5000 bottles per hour</i>",
-			"<i>The 1<sup>st</sup> russian industrial <a href=\"#delta\">Delta-robot</a> — openCV computer vision for navigation</i>"
+			"<i>Конвейер для завода «Renault» — полностью разработал узла переброски сидений</i>",
+			"<i><a href=\"#beluga\">Конвейер водки «Beluga»</a> — собрал автоматический податчик этикеток и фирменых оловянных рыбок</i>",
+			"<i>Первый промышленный <a href=\"#delta\">дельта-робот</a> — сделал навигацию на openCV</i>"
 		]
 	}
 ]
