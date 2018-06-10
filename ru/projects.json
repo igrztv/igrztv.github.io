@@ -12,8 +12,8 @@
 		]
 	}, {
 		"id": "cat",
-		"item-title": "Фитнес-трекер<br>для котов",
-		"item-title-img": "img/cat.jpg",
+		"item-title": "Фитнес-трекер",
+		"item-title-img": "img/cat_ru.jpg",
 		"item-description": "Электронный ошейник для мониторинга здоровья домашних животных. Собирает данные с датчиков IMU и температуры, отправляет на сервер. Random Forest и скрытые марковские цепи выявляют аномалии в поведении, предупреждая владельцев в соц.сетях.",
 		"goals": [
 			"<b>Руководил командой</b> из 4 человек",
@@ -24,12 +24,58 @@
 		"id": "robonyasha",
 		"link": "http://wiki.amperka.ru/robot",
 		"item-title": "Набор «Робоняша»",
-		"item-title-img": "img/robonyasha.jpg",
+		"item-title-img": "img/robonyasha_ru.jpg",
 		"item-description": "Набор для обучения электронике и программированию на JavaScript. Красочная <a href=\"http://wiki.amperka.ru/_media/robot:robonyasha-amperka-18-web.pdf\">книга</a> расскажет как собрать и запрограммировать робота. Научит азам электроники.",
 		"goals": [
 			"Составил образовательный контент",
+			"<b>Подобрал</b> комплектующие с учётом себестоимости",
 			"<b>Подготовил</b> продукт <b>к производству</b>",
 			"<a href=\"https://www.youtube.com/watch?v=wS3Okcguwds\">видео в youtube</a>"			
+		]
+	}, {
+		"id": "beluga",
+		"item-title": "Конвейер<br>водки «Белуга»",
+		"item-title-img": "img/beluga.jpg",
+		"item-description": "Линия производства 5000 бутылок водки в час. В системе работают узлы разлива, наклейка этикеток, наклейка оловянных рыбок (отличительный знак бренда).",
+		"goals": [
+			"<b>Разработал</b> и собрал автоматический податчик этикеток и рыбок",
+			"Детали проектировал <b>с учётом обработки на фрезерном станке</b>"
+		]
+	}, {
+		"id": "diploma",
+		"item-title": "Дипломный<br>проект",
+		"item-title-img": "img/diploma_ru.jpg",
+		"item-description": "Образовательный стенд для обучения программированию микроконтроллеров STM32. Сеть стендов управляется по Wi-Fi с одного компьютера преподавателя: подключение/отключение модулей, контроль выполнения лабораторных работ.",
+		"goals": [
+			"<b>Изготовил устройство</b> к защите диплома",
+			"Разработку внедрили на кафедре"
+		]
+	}, {
+		"id": "speakerball",
+		"item-title": "Слушающий<br>шар",
+		"item-title-img": "img/speakerball.jpg",
+		"item-description": "80 килограмм нержавеющей стали, 55 динамиков, 5 микрофонов, аккумуляторы на 240&nbsp;Вт×ч и аудиоэлектроника. Шар записывает голоса прохожих. Во время качения шар накладывает голоса с разными весами и воспроизводит общую речь.",
+		"goals": [
+			"Спроектировал в 3D шар и начинку",
+			"Изготовил из листовой стали лазерной резкой",
+			"Собрал и запустил на выставке"
+		]
+	}, {
+		"id": "malina",
+		"item-title": "Набор<br>«Малина»",
+		"item-title-img": "img/malina.jpg",
+		"item-description": "Набор призван убрать порог в обучении программированию на одноплатнике Raspberry Pi. Буклет рассказывает как программировать на Python, как создать свой медиасервер и домашний кинотеатр.",
+		"goals": [
+			"<a href=\"https://www.youtube.com/watch?v=CNW2KdwlanE\">видео в youtube</a>"
+		]
+	}, {
+		"id": "clock",
+		"item-title": "Часы<br>из слов",
+		"item-title-img": "img/clock.jpg",
+		"item-description": "RGB-лента WS28xx подсвечивает буквы на немецком языке. Время устанавливается автоматически из сети.",
+		"goals": [
+			"Продал за хорошую сумму",
+			"Статья на <a href=\"https://habr.com/post/384493/\">хабре</a>"
 		]
 	}, {
 		"id": "minion",
@@ -42,113 +88,78 @@
 			"Статья на <a href=\"https://habr.com/post/384171/\">хабре</a>"
 		]
 	}, {
-		"id": "diploma",
-		"item-title": "Дипломный<br>проект",
-		"item-title-img": "img/diploma.jpg",
-		"item-description": "Образовательный стенд для обучения программированию микроконтроллеров STM32. Сеть стендов управляется по Wi-Fi с одного компьютера преподавателя: подключение/отключение модулей, контроль выполнения лабораторных работ.",
-		"goals": [
-			"Изготовил устройство к защите диплома",
-			"Разработку внедрили на кафедре"
-		]
-	}, {
-		"id": "clock",
-		"item-title": "Часы<br>из слов",
-		"item-title-img": "img/clock.jpg",
-		"item-description": "RGB-лента WS28xx подсвечивает буквы на немецком языке. Время устанавливается автоматически из сети.",
-		"goals": [
-			"Продал за хорошую сумму",
-			"Статья на <a href=\"https://habr.com/post/384493/\">хабре</a>"
-		]
-	}, {
 		"id": "yodo-plant",
 		"item-title": "Набор «Автополив»",
 		"item-title-img": "img/plant-y.jpg",
-		"item-description": "\"Watering\" kit helps with learning Javascript for microcontrollers in real case: automatic watering plants. Very popular in Summer.",
+		"item-description": "Дополнение к набору «Йодо» научит создавать системы автополива для домашних растений.",
 		"goals": [
 			"<a href=\"https://www.youtube.com/watch?v=TCt3E7iWZ7w\">видео в youtube</a>"
 		]
 	}, {
-		"id": "malina",
-		"item-title": "\"Malina\"<br>Kit",
-		"item-title-img": "img/malina.jpg",
-		"item-description": "\"Malina\" (Raspberry) is an educational platform for Python programming. How to control GPIO, set up your own media server or develop a web site using Raspberry Pi computer. Colorful book and funny projects in a single box.",
-		"goals": [
-			"<a href=\"https://www.youtube.com/watch?v=CNW2KdwlanE\">видео в youtube</a>"
-		]
+		"id": "hackathon",
+		"item-title": "Команда Banana",
+		"item-title-img": "img/hackathon1.jpg",
+		"item-description": "Моя команда выиграла хакатон Google и Бауманский хакатон. Занимались разработкой MVP приложений и сайтов. Frontend + Android + Backend + Электроника."
 	}, {
 		"id": "iot",
-		"item-title": "\"Internet of Things\" Kit",
+		"item-title": "Набор «Интернет вещей»",
 		"item-title-img": "img/iot.jpg",
-		"item-description": "Educational kit based on <b>ESP8266</b>. Made in 2 variants: for Arduino and for Espruino (Javascript).",
+		"item-description": "Образовательный набор на базе ESP8266. Сделал в двух вариантах: для Arduino и для Espruino (Javascript).",
 		"goals": [
 			"<a href=\"https://www.youtube.com/watch?v=uBkJ70qMLQk\">видео в youtube</a>"
 		]
 	}, {
 		"id": "travis",
-		"item-title": "Travis CI<br>on Traffic Light",
+		"item-title": "Дорожный<br>светофор",
 		"item-title-img": "img/travis.jpg",
-		"item-description": "Monitoring contunious development. <b>Javascript</b> code runs on <b>STM32</b> and requests JSON from Travis CI via HTTPS.",
+		"item-description": "Виджет для Travis CI. Javascript на STM32 отправляет запрос к API и обрабатывает ответ в JSON.",
 		"goals": [
+			"Нашёл светофор!",
+			"Собрал, запрограммировал",
 			"<a href=\"https://www.youtube.com/watch?v=SO-rHkXpbQQ\">видео в youtube</a>"
 		]
 	}, {
 		"id": "delta",
-		"item-title": "Industrial<br>Delta-robot",
+		"item-title": "Промышленный<br>дельта-робот",
 		"item-title-img": "img/delta.jpg",
-		"item-description": "First Russian industrial delta-robot by <a href=\"#jobs\">BitRobotics</a>. My task was to develop object recognition with <b>openCV</b>",
+		"item-description": "Первый российский промышленный дельта-робот от компании <a href=\"#jobs\">BitRobotics</a>.",
 		"goals": [
+			"Разработал навигацию на openCV",
 			"<a href=\"https://www.youtube.com/watch?v=SO-rHkXpbQQ\">видео в youtube</a>"
 		]
 	}, {
-		"id": "beluga",
-		"item-title": "Vodka \"Beluga\"<br>Conveyor",
-		"item-title-img": "img/beluga.jpg",
-		"item-description": "I designed mechanical components for the conveyor. It sets up the fish-sign on the bottles.",
-		"goals": [
-			"3D models for milling and lathe machining was designed with GD&amp;T"
-		]
-	}, {
-		"id": "speakerball",
-		"item-title": "Speaker<br>Steel Ball",
-		"item-title-img": "img/speakerball.jpg",
-		"item-description": "80 kilos of stainless steel, 55 speakers, 240&nbsp;Wh batteries and sound electronics. It records and plays voices.",
-		"goals": [
-			"3D modeling for sheet metal"
-		]
-	}, {
 		"id": "transformation",
-		"item-title": "Transformation<br>Installation",
+		"item-title": "Инсталляция<br>«Трансформация»",
 		"item-title-img": "img/transformation.jpg",
-		"item-description": "I set up movable lasers and mirrors on a wall. Moving by pattern, they organized geometric figures. Special adjustment mechanism was developed."
-	}, {
-		"id": "spray",
-		"item-title": "Digital<br>Spray Painter",
-		"item-title-img": "img/spray.jpg",
-		"item-description": "A regular spray was remade for digital. I set up an IR-led and batteries. Kinect is responsible for mapping on the banner."
-	}, {
-		"id": "orchestra",
-		"item-title": "Bicycle<br>Orchestra",
-		"item-title-img": "img/orchestra.jpg",
-		"item-description": "Each bicycle represents musical instrument. The loudness of each depends on speed. Funny installation for the Day of Moscow."
+		"item-description": "Матрица подвижных лазеров и зеркал установлена на отвесной стене. Свет создаёт геометрические фигуры, отражаясь от зеркал.",
+		"goals": [
+			"Спроектировал систему крепления и настройки элементов на стене",
+			"проект на сайте <a href=\"http://hello.io/art#transformation\">hello.io</a>"
+		]
 	}, {
 		"id": "heart",
-		"item-title": "Heart<br>For Couples",
+		"item-title": "Сердца двух",
 		"item-title-img": "img/heart.jpg",
-		"item-description": "Simple mechanics, but emotional effect. Close electric circuit to verify your feelings."
+		"item-description": "Очень простая механика, но море эмоций. Пара замыкает контакты, сигнал усиливается и передаётся на вход диммеру."
 	}, {
 		"id": "mammoth",
-		"item-title": "Robot<br>Mammoth",
+		"item-title": "Робот-мамонт",
 		"item-title-img": "img/mammoth.jpg",
-		"item-description": "My first robot for Eurobot competition. Not too smart, but very funny. Excellent PID-regulator."
+		"item-description": "Робот для соревнований «Евробот». Не был слишком умным, зато поразил всех своим внешним видом."
 	}, {
 		"id": "like",
-		"item-title": "Facebook<br>Like Notifier",
+		"item-title": "Facebook-метр",
 		"item-title-img": "img/like.jpg",
-		"item-description": "Motivator for SMM-managers. Particle Photon + Facebook Rest API."
+		"item-description": "Мотиватор SMM-щика. Работает на Particle Photon с использованием Facebook Rest API."
 	}, {
-		"id": "hackathon",
-		"item-title": "Banana team<br>hackathons winner",
-		"item-title-img": "img/hackathon1.jpg",
-		"item-description": "We've won Google hackathon and the Bauman University hackathon. Frontend + Android + Backend + Hardware."
+		"id": "spray",
+		"item-title": "Цифровой<br>художник",
+		"item-title-img": "img/spray.jpg",
+		"item-description": "Обычный баллон краски переделан в цифровой. Kinect узнаёт координаты баллона по инфракрасному светодиоду. Проектор выводит изображение на баннер напросвет."
+	}, {
+		"id": "orchestra",
+		"item-title": "Велосипедный<br>оркестр",
+		"item-title-img": "img/orchestra.jpg",
+		"item-description": "Каждый велосипед отвечает за свою партию в оркестре. Громкость партии зависит от скорости вращения педалей. Инсталляция была подготовлена к Дню без автомобилей в Москве."
 	}
 ]
