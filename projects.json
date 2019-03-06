@@ -79,7 +79,17 @@
 		"item-description": "<b>3D printed</b> Minion takes selfie photos and uploads to Instagram. It is controlled via TCP over Wi-Fi.",
 		"goals": [
 			"3D modeling for printing",
-			"C++ for robot and control panel"
+			"C++ for robot and control panel",
+			"<a href=\"video/minion.mp4\" target=\"_blank\">MP4 video</a> <i>(new tab)</i>"
+		]
+	}, {
+		"id": "arm",
+		"item-title": "Robo Arm",
+		"item-title-img": "img/arm.jpg",
+		"item-description": "<b>3D printed</b> arm with 2 microservos and 1 unipolar stepper motor. <b>OpenCV</b> recognizes smartphone screen and controls motor drivers.",
+		"goals": [
+			"C++ OpenCV sowtware for object recognition",
+			"<a href=\"video/arm.mp4\" target=\"_blank\">MP4 video</a> <i>(new tab)</i>"
 		]
 	}, {
 		"id": "clock",
@@ -92,7 +102,8 @@
 		"item-title-img": "img/speakerball.jpg",
 		"item-description": "80 kilos of stainless steel, 55 speakers, 240&nbsp;Wh batteries and sound electronics. It records and plays voices.",
 		"goals": [
-			"3D modeling for sheet metal"
+			"3D modeling for sheet metal",
+			"<a href=\"video/ball.mp4\" target=\"_blank\">MP4 video</a> <i>(new tab)</i>"
 		]
 	}, {
 		"id": "transformation",
