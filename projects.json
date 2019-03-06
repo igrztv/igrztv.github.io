@@ -1,5 +1,21 @@
 [
 	{
+		"id": "dragster",
+		"item-title": "\"Dragster\"<br>Kit",
+		"item-title-img": "img/dragster.jpg",
+		"item-description": "This car was designed especially for line following competitions. The kit teaches how to program robot, explains PID algorithm, I<sup>2</sup>C interface and analog signals.",
+		"goals": [
+			"<a href=\"https://www.youtube.com/watch?v=KiDpGulZ47E\">Youtube video</a>"
+		]
+	},{
+		"id": "beetle",
+		"item-title": "\"BeetleBot\"<br>Kit",
+		"item-title-img": "img/beetle.jpg",
+		"item-description": "\"BeetleBot\" kit explains basic electronic mechanisms and components. Come alive your robobeetle. Even if you are 6 y.o!",
+		"goals": [
+			"<a href=\"https://www.youtube.com/watch?v=vIY2vRc9WIs\">Youtube video</a>"
+		]
+	},{
 		"id": "yodo-plant",
 		"item-title": "\"Auto Watering\"<br>Kit",
 		"item-title-img": "img/plant-y.jpg",
