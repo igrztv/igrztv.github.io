@@ -42,7 +42,7 @@
 		]
 	}, {
 		"id": "iot",
-		"item-title": "\"Internet of Things\" Kit",
+		"item-title": "\"Internet of Things\"<br>Kit",
 		"item-title-img": "img/iot.jpg",
 		"item-description": "Educational kit based on <b>ESP8266</b>. Made in 2 variants: for Arduino and for Espruino (Javascript).",
 		"goals": [

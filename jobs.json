@@ -1,5 +1,18 @@
 [
 	{
+		"id": "fhg",
+		"item-img": "img/fhg.png",
+		"company-title": "Fraunhofer IIS",
+		"company-site": "iis.fraunhofer.de",
+		"item-title": "Scientific Researcher",
+		"item-dates": "feb 2019 — present",
+		"item-description": [
+			"Implementing media player for brand new immersive sound format MPEG-H",
+            "Supporting MPEG-H on Windows, MacOS, Linux, and Android operation systems",
+			"Developing hardware-based stream testers over S/PDIF, MADI and HDMI",
+            "Reverse engineering of hardware"
+		]
+	}, {
 		"id": "amperka",
 		"item-img": "img/amperka.png",
 		"company-title": "Amperka",
