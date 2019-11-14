@@ -5,7 +5,7 @@
 		"item-title-img": "img/dragster.jpg",
 		"item-description": "This robocar was designed especially for line following competitions. The kit teaches how to program robot, explains PID algorithm, I<sup>2</sup>C interface and analog signals.",
 		"goals": [
-			"<a href=\"https://www.youtube.com/watch?v=KiDpGulZ47E\">Youtube video</a>"
+			"<a href=\"https://www.youtube.com/watch?v=O2Mz26Xji0s\">Youtube video</a>"
 		]
 	}, {
 		"id": "beetle",
@@ -13,7 +13,7 @@
 		"item-title-img": "img/beetle.jpg",
 		"item-description": "\"BeetleBot\" kit explains basic electronic mechanisms and components. Come alive your robobeetle. Even if you are 6 y.o!",
 		"goals": [
-			"<a href=\"https://www.youtube.com/watch?v=vIY2vRc9WIs\">Youtube video</a>"
+			"<a href=\"hhttps://www.youtube.com/watch?v=Qp-zjP88Rpg\">Youtube video</a>"
 		]
 	}, {
 		"id": "yodo-plant",
@@ -21,7 +21,7 @@
 		"item-title-img": "img/plant-y.jpg",
 		"item-description": "\"Watering\" kit helps with learning Javascript for microcontrollers in real case: automatic watering plants. Very popular in Summer.",
 		"goals": [
-			"<a href=\"https://www.youtube.com/watch?v=TCt3E7iWZ7w\">Youtube video</a>"
+			"<a href=\"https://www.youtube.com/watch?v=ksvTkkLKDiU\">Youtube video</a>"
 		]
 	}, {
 		"id": "malina",
@@ -46,7 +46,7 @@
 		"item-title-img": "img/iot.jpg",
 		"item-description": "Educational kit based on <b>ESP8266</b>. Made in 2 variants: for Arduino and for Espruino (Javascript).",
 		"goals": [
-			"<a href=\"https://www.youtube.com/watch?v=uBkJ70qMLQk\">Youtube video</a>"
+			"<a href=\"https://www.youtube.com/watch?v=kESsk-Zf1ug\">Youtube video</a>"
 		]
 	}, {
 		"id": "travis",
