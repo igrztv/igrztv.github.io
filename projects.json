@@ -1,5 +1,21 @@
 [
 	{
+		"id": "geeekclub",
+		"item-title": "\"Nano\" and \"Voodoo\"<br>Kits",
+		"item-title-img": "img/nano.jpg",
+		"item-description": "These kits are made to teach people how to solder. Educational book explains how to use solder iron, what are LEDs and PCBs, how transistor works and etc.",
+		"goals": [
+			"<a href=\"https://www.youtube.com/watch?v=IEeaSp3JJ2s\">Youtube video</a>"
+		]
+	}, {
+		"id": "mpegh",
+		"item-title": "MPEG-H audio format",
+		"item-title-img": "img/mpegh.jpg",
+		"item-description": "Next generation audio format requires media players and hardware to be played on.",
+		"goals": [
+			"<a href=\"https://www.youtube.com/watch?v=F8yaAEgLvyc\">Youtube video</a>"
+		]
+	}, {
 		"id": "dragster",
 		"item-title": "\"Dragster\"<br>Kit",
 		"item-title-img": "img/dragster.jpg",
