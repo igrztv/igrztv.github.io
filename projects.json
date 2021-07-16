@@ -9,7 +9,7 @@
 		]
 	}, {
 		"id": "mpegh",
-		"item-title": "MPEG-H audio format",
+		"item-title": "MPEG-H<br>audio format",
 		"item-title-img": "img/mpegh.jpg",
 		"item-description": "Next generation audio format requires media players and hardware to be played on.",
 		"goals": [
